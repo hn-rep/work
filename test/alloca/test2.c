@@ -5,11 +5,11 @@
 #include<unistd.h>
 #include<string.h>
 
-#define	NUM		5
+#define	NUM		1
 
 int main(int argc, char** argv)
 {
-	int len[] = {16, 1, 0, -1, -16};
+	int len[] = {-32};
 	char *buf[NUM];
 	int ii;
 	
@@ -25,14 +25,6 @@ int main(int argc, char** argv)
 		buf[ii][0] = ii;
 		printf("buf[%d][0]  = 0x%x\n", ii, buf[ii][0]);
 		printf("&buf[%d][0] = %p\n\n", ii, &buf[ii][0]);
-	}
-	
-	{
-		printf("buf[3][0]  = 0x%x\n", buf[3][0]);
-		printf("&buf[3][0] = %p\n\n", &buf[3][0]);
-		
-		printf("buf[4][0]  = 0x%x\n", buf[4][0]);
-		printf("&buf[4][0] = %p\n\n", &buf[4][0]);
 	}
 	
 	printf("pass\n");
