@@ -1,9 +1,7 @@
 #!/bin/bash
 
-gcc -g test.c
-./a.out
+gcc -g -o teet test.c
+./test
 
-gcc -g test2.c
-./a.out
-
-#gdb a.out
+gcc -g -o test2 test2.c
+./test2
