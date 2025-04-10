@@ -1,0 +1,174 @@
+diff --git a/sc_pwn.py b/sc_pwn.py
+index 6a006de..dafb1f8 100644
+--- a/sc_pwn.py
++++ b/sc_pwn.py
+@@ -1,7 +1,7 @@
+ #!/usr/bin/env python
+ import sys
+ import os
+-from string import strip
++#from string import strip
+ from struct import pack,unpack
+ from base64 import b64encode, b64decode
+ from time import sleep
+@@ -18,11 +18,11 @@ SEEK_SET            = 0
+ SEEK_CUR            = 1
+ SEEK_END            = 2
+ # <bits/fcntl-linux.h>
+-O_RDONLY            = 00000
+-O_WRONLY            = 00001
+-O_RDWR              = 00002
+-O_CREAT             = 00100
+-O_APPEND            = 02000
++O_RDONLY            = 0x00000
++O_WRONLY            = 0x00001
++O_RDWR              = 0x00002
++O_CREAT             = 0x00100
++O_APPEND            = 0x02000
+ # <bits/mman-linux.h>
+ PROT_NONE           = 0b000
+ PROT_READ           = 0b001
+@@ -54,7 +54,8 @@ rol         = lambda val, r_bits, max_bits: \
+ ror         = lambda val, r_bits, max_bits: \
+               ((val & (2**max_bits-1)) >> r_bits%max_bits) | \
+               (val << (max_bits-(r_bits%max_bits)) & (2**max_bits-1))
+-lib_path    = lambda p,l:     re.search(r'%s => ([^\s]+)' % l, LocalShell().get_output('ldd %s' % p)).group(1) if LocalShell().exists('ldd') else None
++#lib_path    = lambda p,l:     re.search(r'%s => ([^\s]+)' % l, LocalShell().get_output('ldd %s' % p)).group(1) if LocalShell().exists('ldd') else None
++lib_path = lambda p, l: re.search(r'%s => ([^\s]+)' % l, LocalShell().get_output('ldd %s' % p).decode()).group(1) if LocalShell().exists('ldd') else None
+ 
+ #==========
+ 
+@@ -101,7 +102,7 @@ class Environment:
+             env = None
+             
+         while env is None:
+-            sel = raw_input('Select Environment\n%s ...' % str(self.env_list))
++            sel = input('Select Environment\n%s ...' % str(self.env_list))
+             if not sel:
+                 env = self.env_list[0]
+             elif sel in self.env_list:
+@@ -220,7 +221,7 @@ class Communicate:
+                 info(self.read_until()[:-1])
+                 proc(self.read_until()[:-1])
+                 info(self.read_until()[:-1])
+-                raw_input('Enter any key to continue...')
++                input('Enter any key to continue...')
+ 
+             self.timeout = None
+             
+@@ -376,7 +377,7 @@ class Communicate:
+                 proc('Session Disconnect...')
+                 
+         if self.disp:
+-            raw_input('Enter any key to close...')
++            input('Enter any key to close...')
+ 
+ #==========
+         
+@@ -701,7 +702,7 @@ class libcDB:
+                 
+             libc_id = None
+             while libc_id not in libc_list:
+-                libc_id = int(raw_input('... '))
++                libc_id = int(input('... '))
+         else:
+             libc_id = libc_list.keys()[0]
+             
+@@ -853,14 +854,14 @@ class FSB:
+                 
+         for a, v in sorted(d.items(), key=lambda x:x[1]):
+             if self.debug:
+-                print ('0x%%08x <- 0x%%%02dx' % (self.size*2)) % (a,v)
++                print (('0x%%08x <- 0x%%%02dx' % (self.size*2)) % (a,v))
+             adr += self.addr(a)
+             l+=[v]
+         for value in l:
+             pld += self.write(index,value)
+             index += 1
+         if self.debug:
+-            print pld
++            print (pld)
+         
+         return adr+pld
+ 
+@@ -1287,7 +1288,7 @@ class ShellCode:
+         # write(fd, buf, size)
+         return self.syscall(self.sys_no['write'],[fd,buf,size])
+         
+-    def open(self,fname,flags=O_RDONLY,mode=0644):
++    def open(self,fname,flags=O_RDONLY,mode=0x0644):
+         # open(fname, flags)
+         if isinstance(fname, (int,long)) or fname is None:
+             asm_fname = ''
+@@ -1510,7 +1511,7 @@ class Shell:
+             self.token+=choice("1234567890abcdefghijklmnopqrstuvwxyz")
+ 
+     def wait_handler(self, signum, stack):
+-        print 'SIGNAL %d received\n' % signum
++        print ('SIGNAL %d received\n' % signum)
+         if self.wait:
+             self.wait = False
+         else:
+@@ -1524,7 +1525,7 @@ class Shell:
+         while self.cmn.is_alive:
+             mode = '' 
+             while mode not in ('a','n','i','r','s','e'):
+-                mode = raw_input('(A/N/I/R/S/E)...').lower()
++                mode = input('(A/N/I/R/S/E)...').lower()
+             
+             if mode == 'a':
+                 self.advanced()
+@@ -1582,7 +1583,7 @@ class Shell:
+                 else:
+                     fail(pname)
+ 
+-        if disable and raw_input('Recheck?(y/n)').lower()=='y':
++        if disable and input('Recheck?(y/n)').lower()=='y':
+             for pname in disable:
+                 self.is_implemented(pname)
+ 
+@@ -1643,7 +1644,7 @@ class Shell:
+         pwd = self.command('pwd').split('\n')[0]
+ 
+         while True:
+-            cmd = raw_input('[%s@%s:%s]$ ' % (whoami,hostname,pwd))
++            cmd = input('[%s@%s:%s]$ ' % (whoami,hostname,pwd))
+             
+             pgm = cmd.split(' ')
+             if pgm[0]=='GET':
+@@ -1671,7 +1672,7 @@ class Shell:
+ 
+     def normal(self):
+         while True:
+-            cmd = raw_input("$")
++            cmd = input("$")
+             if cmd in ('exit','MODE'):
+                 break
+             else:
+@@ -1681,7 +1682,7 @@ class Shell:
+             self.cmn.is_alive = False
+         
+     def interact(self):
+-        if self.is_implemented('python') and raw_input('Need TTY?(y/n)').lower()=='y':
++        if self.is_implemented('python') and input('Need TTY?(y/n)').lower()=='y':
+             get_tty = True
+             if 'euid' in self.command('id'):
+                 if self.is_implemented('gcc') and self.is_implemented('base64'):
+@@ -1705,7 +1706,7 @@ class Shell:
+             if len(shells)>0:
+                 shell_no = 0
+                 while shell_no <= 0 or shell_no > len(shells):
+-                    shell_no = raw_input('>>')
++                    shell_no = input('>>')
+                     shell_no = int(shell_no) if shell_no.isdigit() else 0
+             else:
+                 shell_no = 1
+@@ -1719,7 +1720,7 @@ class Shell:
+ 
+     def back_connect(self,hp = None):
+         if(hp is None):
+-            tmp = raw_input('Input host "Addr:Port"(Enter:deafult)>>')
++            tmp = input('Input host "Addr:Port"(Enter:deafult)>>')
+             if ':' in tmp:
+                 tmp = tmp.split(':')
+                 hp = (tmp[0],int(tmp[1]))
