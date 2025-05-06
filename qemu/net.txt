@@ -65,3 +65,17 @@ sudo iptables -t nat -A POSTROUTING -s 192.168.122.0/24 ! -d 192.168.122.0/24 -j
     ホストで ip_forward = 1？
 
     ホストで iptables -t nat → MASQUERADE ある？
+
+ 対策：デフォルトルートを追加する
+
+ゲストOS内で以下を実行してください：
+
+sudo ip route add default via 192.168.122.1
+
+これは、192.168.122.1（ホストOSの virbr0 のIPアドレス）を経由して外に出るように設定するコマンドです。
+
+その後、以下を試してみてください：
+
+ping 8.8.8.8
+ping google.com
+sudo apt update
