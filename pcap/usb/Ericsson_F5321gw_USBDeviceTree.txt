@@ -1,0 +1,2009 @@
+
+    =========================== USB Port5 ===========================
+
+Connection Status        : 0x01 (Device is connected)
+Port Chain               : 2-5
+Properties               : 0x01
+ IsUserConnectable       : yes
+ PortIsDebugCapable      : no
+ PortHasMultiCompanions  : no
+ PortConnectorIsTypeC    : no
+ConnectionIndex          : 0x05 (Port 5)
+CompanionIndex           : 0
+ CompanionHubSymLnk      : USB#ROOT_HUB30#4&82e2b50&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8}
+ CompanionPortNumber     : 0x10 (Port 16)
+ -> CompanionPortChain   : 2-16
+
+      ========================== Summary =========================
+Vendor ID                : 0x03F0 (HP Inc.)
+Product ID               : 0x3D1D
+Manufacturer String      : "HP"
+Product String           : "HP hs2350 HSPA+ MobileBroadband"
+Serial                   : "62B1C3DBF77AB190"
+USB Version              : 2.0 (480 Mbit/s)
+Port maximum Speed       : High-Speed (Companion Port 2-16 is doing the SuperSpeed)
+Device maximum Speed     : High-Speed
+Device Connection Speed  : High-Speed
+Self powered             : yes
+Demanded Current         : 0 mA
+Device Manager Problem   : 28 (CM_PROB_FAILED_INSTALL)
+Used Endpoints           : 1
+
+      ======================== USB Device ========================
+
+DriverKeyName            : ERROR_FILE_NOT_FOUND
+
+        +++++++++++++++++ Device Information ++++++++++++++++++
+Device Description       : HP hs2350 HSPA+ MobileBroadband
+Kernel Name (PDO)        : \Device\USBPDO-9
+Device ID                : USB\VID_03F0&PID_3D1D\62B1C3DBF77AB190
+Hardware IDs             : USB\VID_03F0&PID_3D1D&REV_0000 USB\VID_03F0&PID_3D1D
+Driver KeyName           : -
+Legacy BusType           : PNPBus
+Enumerator               : USB
+Location Info            : Port_#0005.Hub_#0003
+Address                  : 5
+Location IDs             : PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(5), ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS05)
+Container ID             : {899dbcf8-8a10-5f32-9c20-80b5118e8517}
+Manufacturer Info        : -
+Capabilities             : 0x14 (Removable, UniqueID)
+Status                   : 0x01806400 (DN_HAS_PROBLEM, DN_DISABLEABLE, DN_REMOVABLE, DN_NT_ENUMERATOR, DN_NT_DRIVER)
+Problem Code             : 28 (CM_PROB_FAILED_INSTALL)
+EnhancedPowerMgmtEnabled : 0
+Power State              : D3 (supported: D0, D1, D2, D3, wake from D0, wake from D1, wake from D2)
+
+        +++++++++++++++++ Registry USB Flags +++++++++++++++++
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\usbflags\03F03D1D0000
+ osvc                    : REG_BINARY 00 00
+
+        ---------------- Connection Information ---------------
+Connection Index         : 0x05 (Port 5)
+Connection Status        : 0x01 (DeviceConnected)
+Current Config Value     : 0x00 (Configuration 0)
+Device Address           : 0x0D (13)
+Is Hub                   : 0x00 (no)
+Device Bus Speed         : 0x02 (High-Speed)
+Number of open Pipes     : 0x00 (0 pipes to data endpoints)
+Data (HexDump)           : 05 00 00 00 12 01 00 02 00 00 00 40 F0 03 1D 3D   ...........@...=
+                           00 00 01 02 03 02 00 02 00 0D 00 00 00 00 00 01   ................
+                           00 00 00                                          ...
+
+        --------------- Connection Information V2 -------------
+Connection Index         : 0x05 (5)
+Length                   : 0x10 (16 bytes)
+SupportedUsbProtocols    : 0x03
+ Usb110                  : 1 (yes, port supports USB 1.1)
+ Usb200                  : 1 (yes, port supports USB 2.0)
+ Usb300                  : 0 (no, port not supports USB 3.0) -> but Companion Port 2-16 does
+ ReservedMBZ             : 0x00
+Flags                    : 0x00
+ DevIsOpAtSsOrHigher     : 0 (Device is not operating at SuperSpeed or higher)
+ DevIsSsCapOrHigher      : 0 (Device is not SuperSpeed capable or higher)
+ DevIsOpAtSsPlusOrHigher : 0 (Device is not operating at SuperSpeedPlus or higher)
+ DevIsSsPlusCapOrHigher  : 0 (Device is not SuperSpeedPlus capable or higher)
+ ReservedMBZ             : 0x00
+Data (HexDump)           : 05 00 00 00 10 00 00 00 03 00 00 00 00 00 00 00   ................
+
+    ---------------------- Device Descriptor ----------------------
+bLength                  : 0x12 (18 bytes)
+bDescriptorType          : 0x01 (Device Descriptor)
+bcdUSB                   : 0x200 (USB Version 2.0)
+bDeviceClass             : 0x00 (defined by the interface descriptors)
+bDeviceSubClass          : 0x00
+bDeviceProtocol          : 0x00
+bMaxPacketSize0          : 0x40 (64 bytes)
+idVendor                 : 0x03F0 (HP Inc.)
+idProduct                : 0x3D1D
+bcdDevice                : 0x0000
+iManufacturer            : 0x01 (String Descriptor 1)
+iProduct                 : 0x02 (String Descriptor 2)
+iSerialNumber            : 0x03 (String Descriptor 3)
+bNumConfigurations       : 0x02 (2 Configurations)
+Data (HexDump)           : 12 01 00 02 00 00 00 40 F0 03 1D 3D 00 00 01 02   .......@...=....
+                           03 02                                             ..
+
+    ------------------ Configuration Descriptor -------------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x02 (Configuration Descriptor)
+wTotalLength             : 0x0173 (371 bytes)
+bNumInterfaces           : 0x0B (11 Interfaces)
+bConfigurationValue      : 0x01 (Configuration 1)
+iConfiguration           : 0x04 (String Descriptor 4)
+bmAttributes             : 0xE0
+ D7: Reserved, set 1     : 0x01
+ D6: Self Powered        : 0x01 (yes)
+ D5: Remote Wakeup       : 0x01 (yes)
+ D4..0: Reserved, set 0  : 0x00
+MaxPower                 : 0x00 (0 mA)
+Data (HexDump)           : 09 02 73 01 0B 01 04 E0 00 09 04 00 00 00 02 08   ..s.............
+                           00 05 05 24 00 20 01 05 24 11 10 01 0E 24 06 00   ...$. ..$....$..
+                           01 02 03 04 05 06 07 08 09 0A 09 04 01 00 01 02   ................
+                           02 01 06 05 24 00 20 01 05 24 06 01 02 05 24 01   ....$. ..$....$.
+                           03 02 04 24 02 06 07 05 8A 03 20 00 08 09 04 02   ...$...... .....
+                           00 02 0A 00 00 07 07 05 01 02 00 02 00 07 05 81   ................
+                           02 00 02 00 09 04 03 00 01 02 02 01 08 05 24 00   ..............$.
+                           20 01 05 24 06 03 04 05 24 01 03 04 04 24 02 06    ..$....$....$..
+                           07 05 89 03 20 00 08 09 04 04 00 02 0A 00 00 09   .... ...........
+                           07 05 02 02 00 02 00 07 05 82 02 00 02 00 09 04   ................
+                           05 00 01 02 09 01 0A 05 24 00 20 01 07 24 14 00   ........$. ..$..
+                           01 00 08 07 05 88 03 20 00 08 09 04 06 00 01 02   ....... ........
+                           0D 00 0B 05 24 00 20 01 05 24 06 06 07 0D 24 0F   ....$. ..$....$.
+                           0C 00 00 00 00 EA 05 40 80 01 06 24 1A 00 01 1B   .......@...$....
+                           16 24 16 00 01 0D 52 99 83 03 E6 2A 47 23 B1 BA   .$....R....*G#..
+                           E9 42 1E 20 1B CA 07 05 86 03 20 00 07 09 04 07   .B. ...... .....
+                           00 00 0A 00 01 0E 09 04 07 01 02 0A 00 01 0F 07   ................
+                           05 05 02 00 02 00 07 05 85 02 00 02 00 09 04 08   ................
+                           00 01 02 09 01 10 05 24 00 20 01 07 24 14 00 01   .......$. ..$...
+                           00 08 07 05 87 03 20 00 08 09 04 09 00 01 02 02   ...... .........
+                           01 11 05 24 00 20 01 05 24 06 09 0A 05 24 01 03   ...$. ..$....$..
+                           0A 04 24 02 06 07 05 84 03 20 00 08 09 04 0A 00   ..$...... ......
+                           02 0A 00 00 12 07 05 03 02 00 02 00 07 05 83 02   ................
+                           00 02 00                                          ...
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x00 (Interface 0)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x00 (Default Control Pipe only)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x08 (Wireless Handset Control Model)
+bInterfaceProtocol       : 0x00 (No class specific protocol required)
+iInterface               : 0x05 (String Descriptor 5)
+Data (HexDump)           : 09 04 00 00 00 02 08 00 05                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x11 (Wireless Handset Control Model Functional Descriptor)
+Data (HexDump)           : 05 24 11 10 01                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x0E (14 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x06 (Union Functional Descriptor)
+bControlInterface        : 0x00
+bSubordinateInterface[0] : 0x01
+bSubordinateInterface[1] : 0x02
+bSubordinateInterface[2] : 0x03
+bSubordinateInterface[3] : 0x04
+bSubordinateInterface[4] : 0x05
+bSubordinateInterface[5] : 0x06
+bSubordinateInterface[6] : 0x07
+bSubordinateInterface[7] : 0x08
+bSubordinateInterface[8] : 0x09
+bSubordinateInterface[9] : 0x0A
+Data (HexDump)           : 0E 24 06 00 01 02 03 04 05 06 07 08 09 0A         .$............
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x01 (Interface 1)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x02 (Abstract Control Model)
+bInterfaceProtocol       : 0x01 (AT Commands defined by ITU-T V.250 etc)
+iInterface               : 0x06 (String Descriptor 6)
+Data (HexDump)           : 09 04 01 00 01 02 02 01 06                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x06 (Union Functional Descriptor)
+bControlInterface        : 0x01
+bSubordinateInterface[0] : 0x02
+Data (HexDump)           : 05 24 06 01 02                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x01 (Call Management Functional Descriptor)
+bmCapabilities           : 0x03
+ D7..2                   : 0x00 (Reserved)
+ D1                      : 0x01 (can send/receive call management information over a Data Class interface)
+ D0                      : 0x01 (handles call management itself)
+bDataInterface           : 0x02
+Data (HexDump)           : 05 24 01 03 02                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x04 (4 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x02 (Abstract Control Management Functional Descriptor)
+bmCapabilities           : 0x06
+ D7..4                   : 0x00 (Reserved)
+ D3                      : 0x00 (not supports the notification Network_Connection)
+ D2                      : 0x01 (supports the request Send_Break)
+ D1                      : 0x01 (supports the request combination of Set_Line_Coding, Set_Control_Line_State, Get_Line_Coding, and the notification Serial_State)
+ D0                      : 0x00 (not supports the request combination of Set_Comm_Feature, Clear_Comm_Feature, and Get_Comm_Feature)
+Data (HexDump)           : 04 24 02 06                                       .$..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x8A (Direction=IN EndpointID=10)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020
+ Bits 15..13             : 0x00 (reserved, must be zero)
+ Bits 12..11             : 0x00 (0 additional transactions per microframe -> allows 1..1024 bytes per packet)
+ Bits 10..0              : 0x20 (32 bytes per packet)
+bInterval                : 0x08 (128 microframes -> 16 ms)
+Data (HexDump)           : 07 05 8A 03 20 00 08                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x02 (Interface 2)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x02 (2 Endpoints)
+bInterfaceClass          : 0x0A (CDC-Data)
+bInterfaceSubClass       : 0x00
+bInterfaceProtocol       : 0x00
+iInterface               : 0x07 (String Descriptor 7)
+Data (HexDump)           : 09 04 02 00 02 0A 00 00 07                        .........
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x01 (Direction=OUT EndpointID=1)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0200 (max 512 bytes)
+bInterval                : 0x00 (never NAKs)
+Data (HexDump)           : 07 05 01 02 00 02 00                              .......
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x81 (Direction=IN EndpointID=1)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0200 (max 512 bytes)
+bInterval                : 0x00 (never NAKs)
+Data (HexDump)           : 07 05 81 02 00 02 00                              .......
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x03 (Interface 3)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x02 (Abstract Control Model)
+bInterfaceProtocol       : 0x01 (AT Commands defined by ITU-T V.250 etc)
+iInterface               : 0x08 (String Descriptor 8)
+Data (HexDump)           : 09 04 03 00 01 02 02 01 08                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x06 (Union Functional Descriptor)
+bControlInterface        : 0x03
+bSubordinateInterface[0] : 0x04
+Data (HexDump)           : 05 24 06 03 04                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x01 (Call Management Functional Descriptor)
+bmCapabilities           : 0x03
+ D7..2                   : 0x00 (Reserved)
+ D1                      : 0x01 (can send/receive call management information over a Data Class interface)
+ D0                      : 0x01 (handles call management itself)
+bDataInterface           : 0x04
+Data (HexDump)           : 05 24 01 03 04                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x04 (4 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x02 (Abstract Control Management Functional Descriptor)
+bmCapabilities           : 0x06
+ D7..4                   : 0x00 (Reserved)
+ D3                      : 0x00 (not supports the notification Network_Connection)
+ D2                      : 0x01 (supports the request Send_Break)
+ D1                      : 0x01 (supports the request combination of Set_Line_Coding, Set_Control_Line_State, Get_Line_Coding, and the notification Serial_State)
+ D0                      : 0x00 (not supports the request combination of Set_Comm_Feature, Clear_Comm_Feature, and Get_Comm_Feature)
+Data (HexDump)           : 04 24 02 06                                       .$..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x89 (Direction=IN EndpointID=9)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020
+ Bits 15..13             : 0x00 (reserved, must be zero)
+ Bits 12..11             : 0x00 (0 additional transactions per microframe -> allows 1..1024 bytes per packet)
+ Bits 10..0              : 0x20 (32 bytes per packet)
+bInterval                : 0x08 (128 microframes -> 16 ms)
+Data (HexDump)           : 07 05 89 03 20 00 08                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x04 (Interface 4)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x02 (2 Endpoints)
+bInterfaceClass          : 0x0A (CDC-Data)
+bInterfaceSubClass       : 0x00
+bInterfaceProtocol       : 0x00
+iInterface               : 0x09 (String Descriptor 9)
+Data (HexDump)           : 09 04 04 00 02 0A 00 00 09                        .........
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x02 (Direction=OUT EndpointID=2)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0200 (max 512 bytes)
+bInterval                : 0x00 (never NAKs)
+Data (HexDump)           : 07 05 02 02 00 02 00                              .......
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x82 (Direction=IN EndpointID=2)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0200 (max 512 bytes)
+bInterval                : 0x00 (never NAKs)
+Data (HexDump)           : 07 05 82 02 00 02 00                              .......
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x05 (Interface 5)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x09 (Device Management)
+bInterfaceProtocol       : 0x01 (AT Commands defined by ITU-T V.250 etc)
+iInterface               : 0x0A (String Descriptor 10)
+Data (HexDump)           : 09 04 05 00 01 02 09 01 0A                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x07 (7 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x14 (Unknown)
+Data (HexDump)           : 07 24 14 00 01 00 08                              .$.....
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x88 (Direction=IN EndpointID=8)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020
+ Bits 15..13             : 0x00 (reserved, must be zero)
+ Bits 12..11             : 0x00 (0 additional transactions per microframe -> allows 1..1024 bytes per packet)
+ Bits 10..0              : 0x20 (32 bytes per packet)
+bInterval                : 0x08 (128 microframes -> 16 ms)
+Data (HexDump)           : 07 05 88 03 20 00 08                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x06 (Interface 6)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x0D (Network Control Model)
+bInterfaceProtocol       : 0x00 (No class specific protocol required)
+iInterface               : 0x0B (String Descriptor 11)
+Data (HexDump)           : 09 04 06 00 01 02 0D 00 0B                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x06 (Union Functional Descriptor)
+bControlInterface        : 0x06
+bSubordinateInterface[0] : 0x07
+Data (HexDump)           : 05 24 06 06 07                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x0D (13 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x0F (Ethernet Networking Functional Descriptor)
+Data (HexDump)           : 0D 24 0F 0C 00 00 00 00 EA 05 40 80 01            .$........@..
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x06 (6 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x1A (Unknown)
+Data (HexDump)           : 06 24 1A 00 01 1B                                 .$....
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x16 (22 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x16 (Unknown)
+Data (HexDump)           : 16 24 16 00 01 0D 52 99 83 03 E6 2A 47 23 B1 BA   .$....R....*G#..
+                           E9 42 1E 20 1B CA                                 .B. ..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x86 (Direction=IN EndpointID=6)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020
+ Bits 15..13             : 0x00 (reserved, must be zero)
+ Bits 12..11             : 0x00 (0 additional transactions per microframe -> allows 1..1024 bytes per packet)
+ Bits 10..0              : 0x20 (32 bytes per packet)
+bInterval                : 0x07 (64 microframes -> 8 ms)
+Data (HexDump)           : 07 05 86 03 20 00 07                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x07 (Interface 7)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x00 (Default Control Pipe only)
+bInterfaceClass          : 0x0A (CDC-Data)
+bInterfaceSubClass       : 0x00
+bInterfaceProtocol       : 0x01
+iInterface               : 0x0E (String Descriptor 14)
+Data (HexDump)           : 09 04 07 00 00 0A 00 01 0E                        .........
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x07 (Interface 7)
+bAlternateSetting        : 0x01
+bNumEndpoints            : 0x02 (2 Endpoints)
+bInterfaceClass          : 0x0A (CDC-Data)
+bInterfaceSubClass       : 0x00
+bInterfaceProtocol       : 0x01
+iInterface               : 0x0F (String Descriptor 15)
+Data (HexDump)           : 09 04 07 01 02 0A 00 01 0F                        .........
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x05 (Direction=OUT EndpointID=5)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0200 (max 512 bytes)
+bInterval                : 0x00 (never NAKs)
+Data (HexDump)           : 07 05 05 02 00 02 00                              .......
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x85 (Direction=IN EndpointID=5)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0200 (max 512 bytes)
+bInterval                : 0x00 (never NAKs)
+Data (HexDump)           : 07 05 85 02 00 02 00                              .......
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x08 (Interface 8)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x09 (Device Management)
+bInterfaceProtocol       : 0x01 (AT Commands defined by ITU-T V.250 etc)
+iInterface               : 0x10 (String Descriptor 16)
+Data (HexDump)           : 09 04 08 00 01 02 09 01 10                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x07 (7 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x14 (Unknown)
+Data (HexDump)           : 07 24 14 00 01 00 08                              .$.....
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x87 (Direction=IN EndpointID=7)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020
+ Bits 15..13             : 0x00 (reserved, must be zero)
+ Bits 12..11             : 0x00 (0 additional transactions per microframe -> allows 1..1024 bytes per packet)
+ Bits 10..0              : 0x20 (32 bytes per packet)
+bInterval                : 0x08 (128 microframes -> 16 ms)
+Data (HexDump)           : 07 05 87 03 20 00 08                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x09 (Interface 9)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x02 (Abstract Control Model)
+bInterfaceProtocol       : 0x01 (AT Commands defined by ITU-T V.250 etc)
+iInterface               : 0x11 (String Descriptor 17)
+Data (HexDump)           : 09 04 09 00 01 02 02 01 11                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x06 (Union Functional Descriptor)
+bControlInterface        : 0x09
+bSubordinateInterface[0] : 0x0A
+Data (HexDump)           : 05 24 06 09 0A                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x01 (Call Management Functional Descriptor)
+bmCapabilities           : 0x03
+ D7..2                   : 0x00 (Reserved)
+ D1                      : 0x01 (can send/receive call management information over a Data Class interface)
+ D0                      : 0x01 (handles call management itself)
+bDataInterface           : 0x0A
+Data (HexDump)           : 05 24 01 03 0A                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x04 (4 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x02 (Abstract Control Management Functional Descriptor)
+bmCapabilities           : 0x06
+ D7..4                   : 0x00 (Reserved)
+ D3                      : 0x00 (not supports the notification Network_Connection)
+ D2                      : 0x01 (supports the request Send_Break)
+ D1                      : 0x01 (supports the request combination of Set_Line_Coding, Set_Control_Line_State, Get_Line_Coding, and the notification Serial_State)
+ D0                      : 0x00 (not supports the request combination of Set_Comm_Feature, Clear_Comm_Feature, and Get_Comm_Feature)
+Data (HexDump)           : 04 24 02 06                                       .$..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x84 (Direction=IN EndpointID=4)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020
+ Bits 15..13             : 0x00 (reserved, must be zero)
+ Bits 12..11             : 0x00 (0 additional transactions per microframe -> allows 1..1024 bytes per packet)
+ Bits 10..0              : 0x20 (32 bytes per packet)
+bInterval                : 0x08 (128 microframes -> 16 ms)
+Data (HexDump)           : 07 05 84 03 20 00 08                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x0A (Interface 10)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x02 (2 Endpoints)
+bInterfaceClass          : 0x0A (CDC-Data)
+bInterfaceSubClass       : 0x00
+bInterfaceProtocol       : 0x00
+iInterface               : 0x12 (String Descriptor 18)
+Data (HexDump)           : 09 04 0A 00 02 0A 00 00 12                        .........
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x03 (Direction=OUT EndpointID=3)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0200 (max 512 bytes)
+bInterval                : 0x00 (never NAKs)
+Data (HexDump)           : 07 05 03 02 00 02 00                              .......
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x83 (Direction=IN EndpointID=3)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0200 (max 512 bytes)
+bInterval                : 0x00 (never NAKs)
+Data (HexDump)           : 07 05 83 02 00 02 00                              .......
+
+    ------------------ Configuration Descriptor -------------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x02 (Configuration Descriptor)
+wTotalLength             : 0x0137 (311 bytes)
+bNumInterfaces           : 0x09 (9 Interfaces)
+bConfigurationValue      : 0x02 (Configuration 2)
+iConfiguration           : 0x13 (String Descriptor 19)
+bmAttributes             : 0xE0
+ D7: Reserved, set 1     : 0x01
+ D6: Self Powered        : 0x01 (yes)
+ D5: Remote Wakeup       : 0x01 (yes)
+ D4..0: Reserved, set 0  : 0x00
+MaxPower                 : 0x00 (0 mA)
+Data (HexDump)           : 09 02 37 01 09 02 13 E0 00 09 04 00 00 00 02 08   ..7.............
+                           00 05 05 24 00 20 01 05 24 11 10 01 0C 24 06 00   ...$. ..$....$..
+                           01 02 03 04 05 06 07 08 09 04 01 00 01 02 02 01   ................
+                           06 05 24 00 20 01 05 24 06 01 02 05 24 01 03 02   ..$. ..$....$...
+                           04 24 02 06 07 05 8A 03 20 00 08 09 04 02 00 02   .$...... .......
+                           0A 00 00 07 07 05 01 02 00 02 00 07 05 81 02 00   ................
+                           02 00 09 04 03 00 01 02 02 01 08 05 24 00 20 01   ............$. .
+                           05 24 06 03 04 05 24 01 03 04 04 24 02 06 07 05   .$....$....$....
+                           89 03 20 00 08 09 04 04 00 02 0A 00 00 09 07 05   .. .............
+                           02 02 00 02 00 07 05 82 02 00 02 00 09 04 05 00   ................
+                           01 02 09 01 0A 05 24 00 20 01 07 24 14 00 01 00   ......$. ..$....
+                           08 07 05 88 03 20 00 08 09 04 06 00 01 02 0D 00   ..... ..........
+                           0B 05 24 00 20 01 05 24 06 06 07 0D 24 0F 0C 00   ..$. ..$....$...
+                           00 00 00 EA 05 40 80 01 06 24 1A 00 01 1B 16 24   .....@...$.....$
+                           16 00 01 0D 52 99 83 03 E6 2A 47 23 B1 BA E9 42   ....R....*G#...B
+                           1E 20 1B CA 07 05 86 03 20 00 07 09 04 07 00 00   . ...... .......
+                           0A 00 01 0E 09 04 07 01 02 0A 00 01 0F 07 05 05   ................
+                           02 00 02 00 07 05 85 02 00 02 00 09 04 08 00 01   ................
+                           02 09 01 10 05 24 00 20 01 07 24 14 00 01 00 08   .....$. ..$.....
+                           07 05 87 03 20 00 08                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x00 (Interface 0)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x00 (Default Control Pipe only)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x08 (Wireless Handset Control Model)
+bInterfaceProtocol       : 0x00 (No class specific protocol required)
+iInterface               : 0x05 (String Descriptor 5)
+Data (HexDump)           : 09 04 00 00 00 02 08 00 05                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x11 (Wireless Handset Control Model Functional Descriptor)
+Data (HexDump)           : 05 24 11 10 01                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x0C (12 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x06 (Union Functional Descriptor)
+bControlInterface        : 0x00
+bSubordinateInterface[0] : 0x01
+bSubordinateInterface[1] : 0x02
+bSubordinateInterface[2] : 0x03
+bSubordinateInterface[3] : 0x04
+bSubordinateInterface[4] : 0x05
+bSubordinateInterface[5] : 0x06
+bSubordinateInterface[6] : 0x07
+bSubordinateInterface[7] : 0x08
+Data (HexDump)           : 0C 24 06 00 01 02 03 04 05 06 07 08               .$..........
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x01 (Interface 1)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x02 (Abstract Control Model)
+bInterfaceProtocol       : 0x01 (AT Commands defined by ITU-T V.250 etc)
+iInterface               : 0x06 (String Descriptor 6)
+Data (HexDump)           : 09 04 01 00 01 02 02 01 06                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x06 (Union Functional Descriptor)
+bControlInterface        : 0x01
+bSubordinateInterface[0] : 0x02
+Data (HexDump)           : 05 24 06 01 02                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x01 (Call Management Functional Descriptor)
+bmCapabilities           : 0x03
+ D7..2                   : 0x00 (Reserved)
+ D1                      : 0x01 (can send/receive call management information over a Data Class interface)
+ D0                      : 0x01 (handles call management itself)
+bDataInterface           : 0x02
+Data (HexDump)           : 05 24 01 03 02                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x04 (4 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x02 (Abstract Control Management Functional Descriptor)
+bmCapabilities           : 0x06
+ D7..4                   : 0x00 (Reserved)
+ D3                      : 0x00 (not supports the notification Network_Connection)
+ D2                      : 0x01 (supports the request Send_Break)
+ D1                      : 0x01 (supports the request combination of Set_Line_Coding, Set_Control_Line_State, Get_Line_Coding, and the notification Serial_State)
+ D0                      : 0x00 (not supports the request combination of Set_Comm_Feature, Clear_Comm_Feature, and Get_Comm_Feature)
+Data (HexDump)           : 04 24 02 06                                       .$..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x8A (Direction=IN EndpointID=10)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020
+ Bits 15..13             : 0x00 (reserved, must be zero)
+ Bits 12..11             : 0x00 (0 additional transactions per microframe -> allows 1..1024 bytes per packet)
+ Bits 10..0              : 0x20 (32 bytes per packet)
+bInterval                : 0x08 (128 microframes -> 16 ms)
+Data (HexDump)           : 07 05 8A 03 20 00 08                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x02 (Interface 2)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x02 (2 Endpoints)
+bInterfaceClass          : 0x0A (CDC-Data)
+bInterfaceSubClass       : 0x00
+bInterfaceProtocol       : 0x00
+iInterface               : 0x07 (String Descriptor 7)
+Data (HexDump)           : 09 04 02 00 02 0A 00 00 07                        .........
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x01 (Direction=OUT EndpointID=1)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0200 (max 512 bytes)
+bInterval                : 0x00 (never NAKs)
+Data (HexDump)           : 07 05 01 02 00 02 00                              .......
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x81 (Direction=IN EndpointID=1)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0200 (max 512 bytes)
+bInterval                : 0x00 (never NAKs)
+Data (HexDump)           : 07 05 81 02 00 02 00                              .......
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x03 (Interface 3)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x02 (Abstract Control Model)
+bInterfaceProtocol       : 0x01 (AT Commands defined by ITU-T V.250 etc)
+iInterface               : 0x08 (String Descriptor 8)
+Data (HexDump)           : 09 04 03 00 01 02 02 01 08                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x06 (Union Functional Descriptor)
+bControlInterface        : 0x03
+bSubordinateInterface[0] : 0x04
+Data (HexDump)           : 05 24 06 03 04                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x01 (Call Management Functional Descriptor)
+bmCapabilities           : 0x03
+ D7..2                   : 0x00 (Reserved)
+ D1                      : 0x01 (can send/receive call management information over a Data Class interface)
+ D0                      : 0x01 (handles call management itself)
+bDataInterface           : 0x04
+Data (HexDump)           : 05 24 01 03 04                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x04 (4 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x02 (Abstract Control Management Functional Descriptor)
+bmCapabilities           : 0x06
+ D7..4                   : 0x00 (Reserved)
+ D3                      : 0x00 (not supports the notification Network_Connection)
+ D2                      : 0x01 (supports the request Send_Break)
+ D1                      : 0x01 (supports the request combination of Set_Line_Coding, Set_Control_Line_State, Get_Line_Coding, and the notification Serial_State)
+ D0                      : 0x00 (not supports the request combination of Set_Comm_Feature, Clear_Comm_Feature, and Get_Comm_Feature)
+Data (HexDump)           : 04 24 02 06                                       .$..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x89 (Direction=IN EndpointID=9)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020
+ Bits 15..13             : 0x00 (reserved, must be zero)
+ Bits 12..11             : 0x00 (0 additional transactions per microframe -> allows 1..1024 bytes per packet)
+ Bits 10..0              : 0x20 (32 bytes per packet)
+bInterval                : 0x08 (128 microframes -> 16 ms)
+Data (HexDump)           : 07 05 89 03 20 00 08                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x04 (Interface 4)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x02 (2 Endpoints)
+bInterfaceClass          : 0x0A (CDC-Data)
+bInterfaceSubClass       : 0x00
+bInterfaceProtocol       : 0x00
+iInterface               : 0x09 (String Descriptor 9)
+Data (HexDump)           : 09 04 04 00 02 0A 00 00 09                        .........
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x02 (Direction=OUT EndpointID=2)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0200 (max 512 bytes)
+bInterval                : 0x00 (never NAKs)
+Data (HexDump)           : 07 05 02 02 00 02 00                              .......
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x82 (Direction=IN EndpointID=2)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0200 (max 512 bytes)
+bInterval                : 0x00 (never NAKs)
+Data (HexDump)           : 07 05 82 02 00 02 00                              .......
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x05 (Interface 5)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x09 (Device Management)
+bInterfaceProtocol       : 0x01 (AT Commands defined by ITU-T V.250 etc)
+iInterface               : 0x0A (String Descriptor 10)
+Data (HexDump)           : 09 04 05 00 01 02 09 01 0A                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x07 (7 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x14 (Unknown)
+Data (HexDump)           : 07 24 14 00 01 00 08                              .$.....
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x88 (Direction=IN EndpointID=8)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020
+ Bits 15..13             : 0x00 (reserved, must be zero)
+ Bits 12..11             : 0x00 (0 additional transactions per microframe -> allows 1..1024 bytes per packet)
+ Bits 10..0              : 0x20 (32 bytes per packet)
+bInterval                : 0x08 (128 microframes -> 16 ms)
+Data (HexDump)           : 07 05 88 03 20 00 08                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x06 (Interface 6)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x0D (Network Control Model)
+bInterfaceProtocol       : 0x00 (No class specific protocol required)
+iInterface               : 0x0B (String Descriptor 11)
+Data (HexDump)           : 09 04 06 00 01 02 0D 00 0B                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x06 (Union Functional Descriptor)
+bControlInterface        : 0x06
+bSubordinateInterface[0] : 0x07
+Data (HexDump)           : 05 24 06 06 07                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x0D (13 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x0F (Ethernet Networking Functional Descriptor)
+Data (HexDump)           : 0D 24 0F 0C 00 00 00 00 EA 05 40 80 01            .$........@..
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x06 (6 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x1A (Unknown)
+Data (HexDump)           : 06 24 1A 00 01 1B                                 .$....
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x16 (22 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x16 (Unknown)
+Data (HexDump)           : 16 24 16 00 01 0D 52 99 83 03 E6 2A 47 23 B1 BA   .$....R....*G#..
+                           E9 42 1E 20 1B CA                                 .B. ..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x86 (Direction=IN EndpointID=6)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020
+ Bits 15..13             : 0x00 (reserved, must be zero)
+ Bits 12..11             : 0x00 (0 additional transactions per microframe -> allows 1..1024 bytes per packet)
+ Bits 10..0              : 0x20 (32 bytes per packet)
+bInterval                : 0x07 (64 microframes -> 8 ms)
+Data (HexDump)           : 07 05 86 03 20 00 07                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x07 (Interface 7)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x00 (Default Control Pipe only)
+bInterfaceClass          : 0x0A (CDC-Data)
+bInterfaceSubClass       : 0x00
+bInterfaceProtocol       : 0x01
+iInterface               : 0x0E (String Descriptor 14)
+Data (HexDump)           : 09 04 07 00 00 0A 00 01 0E                        .........
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x07 (Interface 7)
+bAlternateSetting        : 0x01
+bNumEndpoints            : 0x02 (2 Endpoints)
+bInterfaceClass          : 0x0A (CDC-Data)
+bInterfaceSubClass       : 0x00
+bInterfaceProtocol       : 0x01
+iInterface               : 0x0F (String Descriptor 15)
+Data (HexDump)           : 09 04 07 01 02 0A 00 01 0F                        .........
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x05 (Direction=OUT EndpointID=5)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0200 (max 512 bytes)
+bInterval                : 0x00 (never NAKs)
+Data (HexDump)           : 07 05 05 02 00 02 00                              .......
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x85 (Direction=IN EndpointID=5)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0200 (max 512 bytes)
+bInterval                : 0x00 (never NAKs)
+Data (HexDump)           : 07 05 85 02 00 02 00                              .......
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x08 (Interface 8)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x09 (Device Management)
+bInterfaceProtocol       : 0x01 (AT Commands defined by ITU-T V.250 etc)
+iInterface               : 0x10 (String Descriptor 16)
+Data (HexDump)           : 09 04 08 00 01 02 09 01 10                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x07 (7 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x14 (Unknown)
+Data (HexDump)           : 07 24 14 00 01 00 08                              .$.....
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x87 (Direction=IN EndpointID=7)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020
+ Bits 15..13             : 0x00 (reserved, must be zero)
+ Bits 12..11             : 0x00 (0 additional transactions per microframe -> allows 1..1024 bytes per packet)
+ Bits 10..0              : 0x20 (32 bytes per packet)
+bInterval                : 0x08 (128 microframes -> 16 ms)
+Data (HexDump)           : 07 05 87 03 20 00 08                              .... ..
+
+    --------- Device Qualifier Descriptor (for Full-Speed) --------
+bLength                  : 0x0A (10 bytes)
+bDescriptorType          : 0x06 (Device_qualifier Descriptor)
+bcdUSB                   : 0x200 (USB Version 2.0)
+bDeviceClass             : 0x00 (defined by the interface descriptors)
+bDeviceSubClass          : 0x00
+bDeviceProtocol          : 0x00
+bMaxPacketSize0          : 0x40 (64 Bytes)
+bNumConfigurations       : 0x02 (2 other-speed configurations)
+bReserved                : 0x00
+Data (HexDump)           : 0A 06 00 02 00 00 00 40 02 00                     .......@..
+
+    ------------ Other Speed Configuration Descriptor -------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x07 (Other_speed_configuration Descriptor)
+wTotalLength             : 0x0173 (371 bytes)
+bNumInterfaces           : 0x0B (11 Interfaces)
+bConfigurationValue      : 0x01 (Configuration 1)
+iConfiguration           : 0x04 (String Descriptor 4)
+bmAttributes             : 0xE0
+ D7: Reserved, set 1     : 0x01
+ D6: Self Powered        : 0x01 (yes)
+ D5: Remote Wakeup       : 0x01 (yes)
+ D4..0: Reserved, set 0  : 0x00
+MaxPower                 : 0x00 (0 mA)
+Data (HexDump)           : 09 07 73 01 0B 01 04 E0 00 09 04 00 00 00 02 08   ..s.............
+                           00 05 05 24 00 20 01 05 24 11 10 01 0E 24 06 00   ...$. ..$....$..
+                           01 02 03 04 05 06 07 08 09 0A 09 04 01 00 01 02   ................
+                           02 01 06 05 24 00 20 01 05 24 06 01 02 05 24 01   ....$. ..$....$.
+                           03 02 04 24 02 06 07 05 8A 03 20 00 10 09 04 02   ...$...... .....
+                           00 02 0A 00 00 07 07 05 01 02 40 00 00 07 05 81   ..........@.....
+                           02 40 00 00 09 04 03 00 01 02 02 01 08 05 24 00   .@............$.
+                           20 01 05 24 06 03 04 05 24 01 03 04 04 24 02 06    ..$....$....$..
+                           07 05 89 03 20 00 10 09 04 04 00 02 0A 00 00 09   .... ...........
+                           07 05 02 02 40 00 00 07 05 82 02 40 00 00 09 04   ....@......@....
+                           05 00 01 02 09 01 0A 05 24 00 20 01 07 24 14 00   ........$. ..$..
+                           01 00 08 07 05 88 03 20 00 10 09 04 06 00 01 02   ....... ........
+                           0D 00 0B 05 24 00 20 01 05 24 06 06 07 0D 24 0F   ....$. ..$....$.
+                           0C 00 00 00 00 EA 05 40 80 01 06 24 1A 00 01 1B   .......@...$....
+                           16 24 16 00 01 0D 52 99 83 03 E6 2A 47 23 B1 BA   .$....R....*G#..
+                           E9 42 1E 20 1B CA 07 05 86 03 20 00 0A 09 04 07   .B. ...... .....
+                           00 00 0A 00 01 0E 09 04 07 01 02 0A 00 01 0F 07   ................
+                           05 05 02 40 00 00 07 05 85 02 40 00 00 09 04 08   ...@......@.....
+                           00 01 02 09 01 10 05 24 00 20 01 07 24 14 00 01   .......$. ..$...
+                           00 08 07 05 87 03 20 00 10 09 04 09 00 01 02 02   ...... .........
+                           01 11 05 24 00 20 01 05 24 06 09 0A 05 24 01 03   ...$. ..$....$..
+                           0A 04 24 02 06 07 05 84 03 20 00 10 09 04 0A 00   ..$...... ......
+                           02 0A 00 00 12 07 05 03 02 40 00 00 07 05 83 02   .........@......
+                           40 00 00                                          @..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x00 (Interface 0)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x00 (Default Control Pipe only)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x08 (Wireless Handset Control Model)
+bInterfaceProtocol       : 0x00 (No class specific protocol required)
+iInterface               : 0x05 (String Descriptor 5)
+Data (HexDump)           : 09 04 00 00 00 02 08 00 05                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x11 (Wireless Handset Control Model Functional Descriptor)
+Data (HexDump)           : 05 24 11 10 01                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x0E (14 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x06 (Union Functional Descriptor)
+bControlInterface        : 0x00
+bSubordinateInterface[0] : 0x01
+bSubordinateInterface[1] : 0x02
+bSubordinateInterface[2] : 0x03
+bSubordinateInterface[3] : 0x04
+bSubordinateInterface[4] : 0x05
+bSubordinateInterface[5] : 0x06
+bSubordinateInterface[6] : 0x07
+bSubordinateInterface[7] : 0x08
+bSubordinateInterface[8] : 0x09
+bSubordinateInterface[9] : 0x0A
+Data (HexDump)           : 0E 24 06 00 01 02 03 04 05 06 07 08 09 0A         .$............
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x01 (Interface 1)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x02 (Abstract Control Model)
+bInterfaceProtocol       : 0x01 (AT Commands defined by ITU-T V.250 etc)
+iInterface               : 0x06 (String Descriptor 6)
+Data (HexDump)           : 09 04 01 00 01 02 02 01 06                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x06 (Union Functional Descriptor)
+bControlInterface        : 0x01
+bSubordinateInterface[0] : 0x02
+Data (HexDump)           : 05 24 06 01 02                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x01 (Call Management Functional Descriptor)
+bmCapabilities           : 0x03
+ D7..2                   : 0x00 (Reserved)
+ D1                      : 0x01 (can send/receive call management information over a Data Class interface)
+ D0                      : 0x01 (handles call management itself)
+bDataInterface           : 0x02
+Data (HexDump)           : 05 24 01 03 02                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x04 (4 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x02 (Abstract Control Management Functional Descriptor)
+bmCapabilities           : 0x06
+ D7..4                   : 0x00 (Reserved)
+ D3                      : 0x00 (not supports the notification Network_Connection)
+ D2                      : 0x01 (supports the request Send_Break)
+ D1                      : 0x01 (supports the request combination of Set_Line_Coding, Set_Control_Line_State, Get_Line_Coding, and the notification Serial_State)
+ D0                      : 0x00 (not supports the request combination of Set_Comm_Feature, Clear_Comm_Feature, and Get_Comm_Feature)
+Data (HexDump)           : 04 24 02 06                                       .$..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x8A (Direction=IN EndpointID=10)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020 (32 bytes)
+bInterval                : 0x10 (16 ms)
+Data (HexDump)           : 07 05 8A 03 20 00 10                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x02 (Interface 2)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x02 (2 Endpoints)
+bInterfaceClass          : 0x0A (CDC-Data)
+bInterfaceSubClass       : 0x00
+bInterfaceProtocol       : 0x00
+iInterface               : 0x07 (String Descriptor 7)
+Data (HexDump)           : 09 04 02 00 02 0A 00 00 07                        .........
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x01 (Direction=OUT EndpointID=1)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0040 (64 bytes)
+bInterval                : 0x00 (ignored)
+Data (HexDump)           : 07 05 01 02 40 00 00                              ....@..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x81 (Direction=IN EndpointID=1)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0040 (64 bytes)
+bInterval                : 0x00 (ignored)
+Data (HexDump)           : 07 05 81 02 40 00 00                              ....@..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x03 (Interface 3)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x02 (Abstract Control Model)
+bInterfaceProtocol       : 0x01 (AT Commands defined by ITU-T V.250 etc)
+iInterface               : 0x08 (String Descriptor 8)
+Data (HexDump)           : 09 04 03 00 01 02 02 01 08                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x06 (Union Functional Descriptor)
+bControlInterface        : 0x03
+bSubordinateInterface[0] : 0x04
+Data (HexDump)           : 05 24 06 03 04                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x01 (Call Management Functional Descriptor)
+bmCapabilities           : 0x03
+ D7..2                   : 0x00 (Reserved)
+ D1                      : 0x01 (can send/receive call management information over a Data Class interface)
+ D0                      : 0x01 (handles call management itself)
+bDataInterface           : 0x04
+Data (HexDump)           : 05 24 01 03 04                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x04 (4 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x02 (Abstract Control Management Functional Descriptor)
+bmCapabilities           : 0x06
+ D7..4                   : 0x00 (Reserved)
+ D3                      : 0x00 (not supports the notification Network_Connection)
+ D2                      : 0x01 (supports the request Send_Break)
+ D1                      : 0x01 (supports the request combination of Set_Line_Coding, Set_Control_Line_State, Get_Line_Coding, and the notification Serial_State)
+ D0                      : 0x00 (not supports the request combination of Set_Comm_Feature, Clear_Comm_Feature, and Get_Comm_Feature)
+Data (HexDump)           : 04 24 02 06                                       .$..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x89 (Direction=IN EndpointID=9)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020 (32 bytes)
+bInterval                : 0x10 (16 ms)
+Data (HexDump)           : 07 05 89 03 20 00 10                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x04 (Interface 4)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x02 (2 Endpoints)
+bInterfaceClass          : 0x0A (CDC-Data)
+bInterfaceSubClass       : 0x00
+bInterfaceProtocol       : 0x00
+iInterface               : 0x09 (String Descriptor 9)
+Data (HexDump)           : 09 04 04 00 02 0A 00 00 09                        .........
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x02 (Direction=OUT EndpointID=2)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0040 (64 bytes)
+bInterval                : 0x00 (ignored)
+Data (HexDump)           : 07 05 02 02 40 00 00                              ....@..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x82 (Direction=IN EndpointID=2)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0040 (64 bytes)
+bInterval                : 0x00 (ignored)
+Data (HexDump)           : 07 05 82 02 40 00 00                              ....@..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x05 (Interface 5)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x09 (Device Management)
+bInterfaceProtocol       : 0x01 (AT Commands defined by ITU-T V.250 etc)
+iInterface               : 0x0A (String Descriptor 10)
+Data (HexDump)           : 09 04 05 00 01 02 09 01 0A                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x07 (7 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x14 (Unknown)
+Data (HexDump)           : 07 24 14 00 01 00 08                              .$.....
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x88 (Direction=IN EndpointID=8)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020 (32 bytes)
+bInterval                : 0x10 (16 ms)
+Data (HexDump)           : 07 05 88 03 20 00 10                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x06 (Interface 6)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x0D (Network Control Model)
+bInterfaceProtocol       : 0x00 (No class specific protocol required)
+iInterface               : 0x0B (String Descriptor 11)
+Data (HexDump)           : 09 04 06 00 01 02 0D 00 0B                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x06 (Union Functional Descriptor)
+bControlInterface        : 0x06
+bSubordinateInterface[0] : 0x07
+Data (HexDump)           : 05 24 06 06 07                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x0D (13 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x0F (Ethernet Networking Functional Descriptor)
+Data (HexDump)           : 0D 24 0F 0C 00 00 00 00 EA 05 40 80 01            .$........@..
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x06 (6 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x1A (Unknown)
+Data (HexDump)           : 06 24 1A 00 01 1B                                 .$....
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x16 (22 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x16 (Unknown)
+Data (HexDump)           : 16 24 16 00 01 0D 52 99 83 03 E6 2A 47 23 B1 BA   .$....R....*G#..
+                           E9 42 1E 20 1B CA                                 .B. ..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x86 (Direction=IN EndpointID=6)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020 (32 bytes)
+bInterval                : 0x0A (10 ms)
+Data (HexDump)           : 07 05 86 03 20 00 0A                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x07 (Interface 7)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x00 (Default Control Pipe only)
+bInterfaceClass          : 0x0A (CDC-Data)
+bInterfaceSubClass       : 0x00
+bInterfaceProtocol       : 0x01
+iInterface               : 0x0E (String Descriptor 14)
+Data (HexDump)           : 09 04 07 00 00 0A 00 01 0E                        .........
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x07 (Interface 7)
+bAlternateSetting        : 0x01
+bNumEndpoints            : 0x02 (2 Endpoints)
+bInterfaceClass          : 0x0A (CDC-Data)
+bInterfaceSubClass       : 0x00
+bInterfaceProtocol       : 0x01
+iInterface               : 0x0F (String Descriptor 15)
+Data (HexDump)           : 09 04 07 01 02 0A 00 01 0F                        .........
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x05 (Direction=OUT EndpointID=5)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0040 (64 bytes)
+bInterval                : 0x00 (ignored)
+Data (HexDump)           : 07 05 05 02 40 00 00                              ....@..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x85 (Direction=IN EndpointID=5)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0040 (64 bytes)
+bInterval                : 0x00 (ignored)
+Data (HexDump)           : 07 05 85 02 40 00 00                              ....@..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x08 (Interface 8)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x09 (Device Management)
+bInterfaceProtocol       : 0x01 (AT Commands defined by ITU-T V.250 etc)
+iInterface               : 0x10 (String Descriptor 16)
+Data (HexDump)           : 09 04 08 00 01 02 09 01 10                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x07 (7 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x14 (Unknown)
+Data (HexDump)           : 07 24 14 00 01 00 08                              .$.....
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x87 (Direction=IN EndpointID=7)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020 (32 bytes)
+bInterval                : 0x10 (16 ms)
+Data (HexDump)           : 07 05 87 03 20 00 10                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x09 (Interface 9)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x02 (Abstract Control Model)
+bInterfaceProtocol       : 0x01 (AT Commands defined by ITU-T V.250 etc)
+iInterface               : 0x11 (String Descriptor 17)
+Data (HexDump)           : 09 04 09 00 01 02 02 01 11                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x06 (Union Functional Descriptor)
+bControlInterface        : 0x09
+bSubordinateInterface[0] : 0x0A
+Data (HexDump)           : 05 24 06 09 0A                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x01 (Call Management Functional Descriptor)
+bmCapabilities           : 0x03
+ D7..2                   : 0x00 (Reserved)
+ D1                      : 0x01 (can send/receive call management information over a Data Class interface)
+ D0                      : 0x01 (handles call management itself)
+bDataInterface           : 0x0A
+Data (HexDump)           : 05 24 01 03 0A                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x04 (4 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x02 (Abstract Control Management Functional Descriptor)
+bmCapabilities           : 0x06
+ D7..4                   : 0x00 (Reserved)
+ D3                      : 0x00 (not supports the notification Network_Connection)
+ D2                      : 0x01 (supports the request Send_Break)
+ D1                      : 0x01 (supports the request combination of Set_Line_Coding, Set_Control_Line_State, Get_Line_Coding, and the notification Serial_State)
+ D0                      : 0x00 (not supports the request combination of Set_Comm_Feature, Clear_Comm_Feature, and Get_Comm_Feature)
+Data (HexDump)           : 04 24 02 06                                       .$..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x84 (Direction=IN EndpointID=4)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020 (32 bytes)
+bInterval                : 0x10 (16 ms)
+Data (HexDump)           : 07 05 84 03 20 00 10                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x0A (Interface 10)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x02 (2 Endpoints)
+bInterfaceClass          : 0x0A (CDC-Data)
+bInterfaceSubClass       : 0x00
+bInterfaceProtocol       : 0x00
+iInterface               : 0x12 (String Descriptor 18)
+Data (HexDump)           : 09 04 0A 00 02 0A 00 00 12                        .........
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x03 (Direction=OUT EndpointID=3)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0040 (64 bytes)
+bInterval                : 0x00 (ignored)
+Data (HexDump)           : 07 05 03 02 40 00 00                              ....@..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x83 (Direction=IN EndpointID=3)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0040 (64 bytes)
+bInterval                : 0x00 (ignored)
+Data (HexDump)           : 07 05 83 02 40 00 00                              ....@..
+
+    ------------ Other Speed Configuration Descriptor -------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x07 (Other_speed_configuration Descriptor)
+wTotalLength             : 0x0137 (311 bytes)
+bNumInterfaces           : 0x09 (9 Interfaces)
+bConfigurationValue      : 0x02 (Configuration 2)
+iConfiguration           : 0x13 (String Descriptor 19)
+bmAttributes             : 0xE0
+ D7: Reserved, set 1     : 0x01
+ D6: Self Powered        : 0x01 (yes)
+ D5: Remote Wakeup       : 0x01 (yes)
+ D4..0: Reserved, set 0  : 0x00
+MaxPower                 : 0x00 (0 mA)
+Data (HexDump)           : 09 07 37 01 09 02 13 E0 00 09 04 00 00 00 02 08   ..7.............
+                           00 05 05 24 00 20 01 05 24 11 10 01 0C 24 06 00   ...$. ..$....$..
+                           01 02 03 04 05 06 07 08 09 04 01 00 01 02 02 01   ................
+                           06 05 24 00 20 01 05 24 06 01 02 05 24 01 03 02   ..$. ..$....$...
+                           04 24 02 06 07 05 8A 03 20 00 10 09 04 02 00 02   .$...... .......
+                           0A 00 00 07 07 05 01 02 40 00 00 07 05 81 02 40   ........@......@
+                           00 00 09 04 03 00 01 02 02 01 08 05 24 00 20 01   ............$. .
+                           05 24 06 03 04 05 24 01 03 04 04 24 02 06 07 05   .$....$....$....
+                           89 03 20 00 10 09 04 04 00 02 0A 00 00 09 07 05   .. .............
+                           02 02 40 00 00 07 05 82 02 40 00 00 09 04 05 00   ..@......@......
+                           01 02 09 01 0A 05 24 00 20 01 07 24 14 00 01 00   ......$. ..$....
+                           08 07 05 88 03 20 00 10 09 04 06 00 01 02 0D 00   ..... ..........
+                           0B 05 24 00 20 01 05 24 06 06 07 0D 24 0F 0C 00   ..$. ..$....$...
+                           00 00 00 EA 05 40 80 01 06 24 1A 00 01 1B 16 24   .....@...$.....$
+                           16 00 01 0D 52 99 83 03 E6 2A 47 23 B1 BA E9 42   ....R....*G#...B
+                           1E 20 1B CA 07 05 86 03 20 00 0A 09 04 07 00 00   . ...... .......
+                           0A 00 01 0E 09 04 07 01 02 0A 00 01 0F 07 05 05   ................
+                           02 40 00 00 07 05 85 02 40 00 00 09 04 08 00 01   .@......@.......
+                           02 09 01 10 05 24 00 20 01 07 24 14 00 01 00 08   .....$. ..$.....
+                           07 05 87 03 20 00 10                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x00 (Interface 0)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x00 (Default Control Pipe only)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x08 (Wireless Handset Control Model)
+bInterfaceProtocol       : 0x00 (No class specific protocol required)
+iInterface               : 0x05 (String Descriptor 5)
+Data (HexDump)           : 09 04 00 00 00 02 08 00 05                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x11 (Wireless Handset Control Model Functional Descriptor)
+Data (HexDump)           : 05 24 11 10 01                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x0C (12 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x06 (Union Functional Descriptor)
+bControlInterface        : 0x00
+bSubordinateInterface[0] : 0x01
+bSubordinateInterface[1] : 0x02
+bSubordinateInterface[2] : 0x03
+bSubordinateInterface[3] : 0x04
+bSubordinateInterface[4] : 0x05
+bSubordinateInterface[5] : 0x06
+bSubordinateInterface[6] : 0x07
+bSubordinateInterface[7] : 0x08
+Data (HexDump)           : 0C 24 06 00 01 02 03 04 05 06 07 08               .$..........
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x01 (Interface 1)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x02 (Abstract Control Model)
+bInterfaceProtocol       : 0x01 (AT Commands defined by ITU-T V.250 etc)
+iInterface               : 0x06 (String Descriptor 6)
+Data (HexDump)           : 09 04 01 00 01 02 02 01 06                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x06 (Union Functional Descriptor)
+bControlInterface        : 0x01
+bSubordinateInterface[0] : 0x02
+Data (HexDump)           : 05 24 06 01 02                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x01 (Call Management Functional Descriptor)
+bmCapabilities           : 0x03
+ D7..2                   : 0x00 (Reserved)
+ D1                      : 0x01 (can send/receive call management information over a Data Class interface)
+ D0                      : 0x01 (handles call management itself)
+bDataInterface           : 0x02
+Data (HexDump)           : 05 24 01 03 02                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x04 (4 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x02 (Abstract Control Management Functional Descriptor)
+bmCapabilities           : 0x06
+ D7..4                   : 0x00 (Reserved)
+ D3                      : 0x00 (not supports the notification Network_Connection)
+ D2                      : 0x01 (supports the request Send_Break)
+ D1                      : 0x01 (supports the request combination of Set_Line_Coding, Set_Control_Line_State, Get_Line_Coding, and the notification Serial_State)
+ D0                      : 0x00 (not supports the request combination of Set_Comm_Feature, Clear_Comm_Feature, and Get_Comm_Feature)
+Data (HexDump)           : 04 24 02 06                                       .$..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x8A (Direction=IN EndpointID=10)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020 (32 bytes)
+bInterval                : 0x10 (16 ms)
+Data (HexDump)           : 07 05 8A 03 20 00 10                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x02 (Interface 2)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x02 (2 Endpoints)
+bInterfaceClass          : 0x0A (CDC-Data)
+bInterfaceSubClass       : 0x00
+bInterfaceProtocol       : 0x00
+iInterface               : 0x07 (String Descriptor 7)
+Data (HexDump)           : 09 04 02 00 02 0A 00 00 07                        .........
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x01 (Direction=OUT EndpointID=1)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0040 (64 bytes)
+bInterval                : 0x00 (ignored)
+Data (HexDump)           : 07 05 01 02 40 00 00                              ....@..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x81 (Direction=IN EndpointID=1)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0040 (64 bytes)
+bInterval                : 0x00 (ignored)
+Data (HexDump)           : 07 05 81 02 40 00 00                              ....@..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x03 (Interface 3)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x02 (Abstract Control Model)
+bInterfaceProtocol       : 0x01 (AT Commands defined by ITU-T V.250 etc)
+iInterface               : 0x08 (String Descriptor 8)
+Data (HexDump)           : 09 04 03 00 01 02 02 01 08                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x06 (Union Functional Descriptor)
+bControlInterface        : 0x03
+bSubordinateInterface[0] : 0x04
+Data (HexDump)           : 05 24 06 03 04                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x01 (Call Management Functional Descriptor)
+bmCapabilities           : 0x03
+ D7..2                   : 0x00 (Reserved)
+ D1                      : 0x01 (can send/receive call management information over a Data Class interface)
+ D0                      : 0x01 (handles call management itself)
+bDataInterface           : 0x04
+Data (HexDump)           : 05 24 01 03 04                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x04 (4 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x02 (Abstract Control Management Functional Descriptor)
+bmCapabilities           : 0x06
+ D7..4                   : 0x00 (Reserved)
+ D3                      : 0x00 (not supports the notification Network_Connection)
+ D2                      : 0x01 (supports the request Send_Break)
+ D1                      : 0x01 (supports the request combination of Set_Line_Coding, Set_Control_Line_State, Get_Line_Coding, and the notification Serial_State)
+ D0                      : 0x00 (not supports the request combination of Set_Comm_Feature, Clear_Comm_Feature, and Get_Comm_Feature)
+Data (HexDump)           : 04 24 02 06                                       .$..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x89 (Direction=IN EndpointID=9)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020 (32 bytes)
+bInterval                : 0x10 (16 ms)
+Data (HexDump)           : 07 05 89 03 20 00 10                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x04 (Interface 4)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x02 (2 Endpoints)
+bInterfaceClass          : 0x0A (CDC-Data)
+bInterfaceSubClass       : 0x00
+bInterfaceProtocol       : 0x00
+iInterface               : 0x09 (String Descriptor 9)
+Data (HexDump)           : 09 04 04 00 02 0A 00 00 09                        .........
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x02 (Direction=OUT EndpointID=2)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0040 (64 bytes)
+bInterval                : 0x00 (ignored)
+Data (HexDump)           : 07 05 02 02 40 00 00                              ....@..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x82 (Direction=IN EndpointID=2)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0040 (64 bytes)
+bInterval                : 0x00 (ignored)
+Data (HexDump)           : 07 05 82 02 40 00 00                              ....@..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x05 (Interface 5)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x09 (Device Management)
+bInterfaceProtocol       : 0x01 (AT Commands defined by ITU-T V.250 etc)
+iInterface               : 0x0A (String Descriptor 10)
+Data (HexDump)           : 09 04 05 00 01 02 09 01 0A                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x07 (7 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x14 (Unknown)
+Data (HexDump)           : 07 24 14 00 01 00 08                              .$.....
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x88 (Direction=IN EndpointID=8)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020 (32 bytes)
+bInterval                : 0x10 (16 ms)
+Data (HexDump)           : 07 05 88 03 20 00 10                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x06 (Interface 6)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x0D (Network Control Model)
+bInterfaceProtocol       : 0x00 (No class specific protocol required)
+iInterface               : 0x0B (String Descriptor 11)
+Data (HexDump)           : 09 04 06 00 01 02 0D 00 0B                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x06 (Union Functional Descriptor)
+bControlInterface        : 0x06
+bSubordinateInterface[0] : 0x07
+Data (HexDump)           : 05 24 06 06 07                                    .$...
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x0D (13 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x0F (Ethernet Networking Functional Descriptor)
+Data (HexDump)           : 0D 24 0F 0C 00 00 00 00 EA 05 40 80 01            .$........@..
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x06 (6 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x1A (Unknown)
+Data (HexDump)           : 06 24 1A 00 01 1B                                 .$....
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x16 (22 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x16 (Unknown)
+Data (HexDump)           : 16 24 16 00 01 0D 52 99 83 03 E6 2A 47 23 B1 BA   .$....R....*G#..
+                           E9 42 1E 20 1B CA                                 .B. ..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x86 (Direction=IN EndpointID=6)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020 (32 bytes)
+bInterval                : 0x0A (10 ms)
+Data (HexDump)           : 07 05 86 03 20 00 0A                              .... ..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x07 (Interface 7)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x00 (Default Control Pipe only)
+bInterfaceClass          : 0x0A (CDC-Data)
+bInterfaceSubClass       : 0x00
+bInterfaceProtocol       : 0x01
+iInterface               : 0x0E (String Descriptor 14)
+Data (HexDump)           : 09 04 07 00 00 0A 00 01 0E                        .........
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x07 (Interface 7)
+bAlternateSetting        : 0x01
+bNumEndpoints            : 0x02 (2 Endpoints)
+bInterfaceClass          : 0x0A (CDC-Data)
+bInterfaceSubClass       : 0x00
+bInterfaceProtocol       : 0x01
+iInterface               : 0x0F (String Descriptor 15)
+Data (HexDump)           : 09 04 07 01 02 0A 00 01 0F                        .........
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x05 (Direction=OUT EndpointID=5)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0040 (64 bytes)
+bInterval                : 0x00 (ignored)
+Data (HexDump)           : 07 05 05 02 40 00 00                              ....@..
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x85 (Direction=IN EndpointID=5)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0040 (64 bytes)
+bInterval                : 0x00 (ignored)
+Data (HexDump)           : 07 05 85 02 40 00 00                              ....@..
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x08 (Interface 8)
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x01 (1 Endpoint)
+bInterfaceClass          : 0x02 (Communications and CDC Control)
+bInterfaceSubClass       : 0x09 (Device Management)
+bInterfaceProtocol       : 0x01 (AT Commands defined by ITU-T V.250 etc)
+iInterface               : 0x10 (String Descriptor 16)
+Data (HexDump)           : 09 04 08 00 01 02 09 01 10                        .........
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x05 (5 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x00 (Header Functional Descriptor)
+bcdCDC                   : 0x120 (CDC Version 1.20)
+Data (HexDump)           : 05 24 00 20 01                                    .$. .
+
+        -------------- CDC Interface Descriptor ---------------
+bFunctionLength          : 0x07 (7 bytes)
+bDescriptorType          : 0x24 (Interface)
+bDescriptorSubType       : 0x14 (Unknown)
+Data (HexDump)           : 07 24 14 00 01 00 08                              .$.....
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x87 (Direction=IN EndpointID=7)
+bmAttributes             : 0x03 (TransferType=Interrupt)
+wMaxPacketSize           : 0x0020 (32 bytes)
+bInterval                : 0x10 (16 ms)
+Data (HexDump)           : 07 05 87 03 20 00 10                              .... ..
+
+      -------------------- String Descriptors -------------------
+String descriptors are not available  (because the device has problem code CM_PROB_FAILED_INSTALL)
